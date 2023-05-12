@@ -51,7 +51,6 @@ tbl_names <- readr::read_csv(
   file = file_name_names, 
   show_col_types = FALSE
 )
-print(file_name_names)
 # Print `tbl_names`
 print(tbl_names)
 ```
@@ -234,8 +233,8 @@ tbl_names_by_letter = tbl_names |>
   
 tbl_names_by_letter
 # Math checks out
-sum(tbl_names_by_letter$pct_births)
-length(unique(tbl_names_by_letter$year))
+# sum(tbl_names_by_letter$pct_births)
+# length(unique(tbl_names_by_letter$year))
 ```
 
 #### Visualize
@@ -343,7 +342,7 @@ tbl_names_by_first_and_last_letter
 Now, you will visualize the distribution of `pct_births` by `last_letter` and `first_letter` by plotting a heatmap of the percentage of births by first letter and last letter for the year 2021.
 
 ```{r question-4-visualize}
-glimpse(tbl_names_by_first_and_last_letter)
+# glimpse(tbl_names_by_first_and_last_letter)
 
 tbl_names_by_first_and_last_letter |> 
   # Filter for the year 2021
