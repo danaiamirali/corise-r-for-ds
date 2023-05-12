@@ -232,7 +232,7 @@ plot_trends_in_name <- function(my_name) {
     # Initialize a ggplot of `nb_births` vs. `year` colored by `sex`
     ggplot(aes(x = year, y = nb_births, color = sex)) +
     # Add a line layer
-    geom_smooth() +
+    geom_line() +
     # Add labels (title, x, y)
     labs(
       title = glue::glue("Babies named {my_name} across the years!"),
@@ -245,15 +245,11 @@ plot_trends_in_name <- function(my_name) {
 plot_trends_in_name("Steve")
 ```
 
-    #> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
-
 <img src="img/question-2-visualize-1.png" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 plot_trends_in_name("Barbara")
 ```
-
-    #> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
 <img src="img/question-2-visualize-2.png" width="100%" style="display: block; margin: auto;" />
 
