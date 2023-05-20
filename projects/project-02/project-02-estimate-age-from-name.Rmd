@@ -26,6 +26,9 @@ knitr::opts_chunk$set(
 ## What's in a Name? - Estimating Age from Name
 
 ![shakespeare-whats-in-a-name](https://miro.medium.com/v2/resize:fit:800/1*Prp8tivsOP54c-bPTpxj5A.png)
+```{r}
+update.packages()
+```
 
 So, what more is in a name? Believe it or not, it is possible to predict the age of a person based on their name (Whoa! Really????). In fact, FiveThirtyEight, a popular website that focuses on data-driven journalism, published a [blog post](https://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/) on this in 2014. Wouldn't it be exciting to try and replicate their findings? Actually, we are going to do more than just replicate their results, since we now have 7 years worth of additional data.
 
